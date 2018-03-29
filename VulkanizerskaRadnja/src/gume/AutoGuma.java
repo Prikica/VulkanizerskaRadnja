@@ -67,7 +67,7 @@ public class AutoGuma {
 	 *             ako je uneti precnik manji od 13 i veci od 22.
 	 */
 	public void setPrecnik(int precnik) {
-		if (precnik < 13 && precnik > 22)
+		if (precnik < 13 || precnik > 22)
 			throw new RuntimeException("Precnik van opsega");
 		this.precnik = precnik;
 	}
@@ -90,7 +90,7 @@ public class AutoGuma {
 	 *             ako je sirina gume manja od 135 ili veca od 355.
 	 */
 	public void setSirina(int sirina) {
-		if (sirina < 135 && sirina > 355)
+		if (sirina < 135 || sirina > 355)
 			throw new RuntimeException("Sirina van opsega");
 		this.sirina = sirina;
 	}
