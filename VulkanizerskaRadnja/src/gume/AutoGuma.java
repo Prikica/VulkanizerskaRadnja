@@ -40,8 +40,11 @@ public class AutoGuma {
 	 * @param markaModel
 	 *            koji predstavlja vrednost za marku i model gume.
 	 * @throws RuntimeException
-	 *             ako je markaModel ima null vrednost ili ako String ima manje od 3
-	 *             karaktera.
+	 *             <ul>
+	 *             <li>Ako je markaModel ima null vrednost
+	 *             <li>Ako String ima manje od 3 karaktera.
+	 *             </ul>
+	 * 
 	 */
 	public void setMarkaModel(String markaModel) {
 		if (markaModel == null || markaModel.length() < 3)
@@ -87,7 +90,9 @@ public class AutoGuma {
 	 * @param sirina
 	 *            koji predstavlja sirinu gume.
 	 * @throws RuntimeException
-	 *             ako je sirina gume manja od 135 ili veca od 355.
+	 *             <ul>
+	 *             <li>Ako je sirina gume manja od 135 ili veca od 355.
+	 *             </ul>
 	 */
 	public void setSirina(int sirina) {
 		if (sirina < 135 || sirina > 355)
@@ -110,7 +115,9 @@ public class AutoGuma {
 	 * @param visina
 	 *            koji predstavlja visinu gume.
 	 * @throws RuntimeException
-	 *             ako je visina gume manja od 25 ili veca od 95.
+	 *             <ul>
+	 *             <li>Ako je visina gume manja od 25 ili veca od 95.
+	 *             </ul>
 	 */
 	public void setVisina(int visina) {
 		if (visina < 25 || visina > 95)
