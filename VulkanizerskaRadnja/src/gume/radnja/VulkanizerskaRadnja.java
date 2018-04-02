@@ -21,14 +21,14 @@ public class VulkanizerskaRadnja {
 	 * 
 	 * @param a
 	 *            koji predstavlja instancu klase AutoGuma.
-	 * @throws java.lang.NullPointerException.NullPointerException
+	 * @throws java.lang.NullPointerException
 	 *             <ul>
-	 *             <li>Ako je prosledjeni parametar za gumu null.
+	 *             <li>Ako je prosledjeni parametar za gumu null.</li>
 	 *             </ul>
 	 * 
 	 * @throws java.lang.RuntimeException
 	 *             <ul>
-	 *             <li>Ako guma vec postoji u listi.
+	 *             <li>Ako guma vec postoji u listi.</li>
 	 *             </ul>
 	 */
 	public void dodajGumu(AutoGuma a) {

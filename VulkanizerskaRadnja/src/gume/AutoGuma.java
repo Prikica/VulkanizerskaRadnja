@@ -139,9 +139,10 @@ public class AutoGuma {
 	}
 
 	/**
-	 * Override-ovana metoda equals koja poredi dve gume.
+	 * Override-ovana metoda equals koja poredi dva objekta klase AutoGuma, odnosno
+	 * njihove atribute markaModel, precnik, visina i sirina.
 	 * 
-	 * @return boolean vrednost.
+	 * @return true ako su isti ili false ako nisu.
 	 */
 	@Override
 	public boolean equals(Object obj) {
