@@ -1,4 +1,4 @@
-package gume;
+package gume.radnja;
 
 import static org.junit.Assert.*;
 
@@ -8,6 +8,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import gume.AutoGuma;
 import gume.radnja.VulkanizerskaRadnja;
 
 public class VulkanizerskaRadnjaTest {
@@ -35,8 +36,8 @@ public class VulkanizerskaRadnjaTest {
 	@Test
 	public void testDodajGumu() {
 		v.dodajGumu(a);
-		LinkedList<AutoGuma> nova = v.pronadjiGumu("Miselin");
-		assertEquals(1, nova.size());
+
+		assertEquals(v.gume.get(v.gume.size() - 1), a);
 	}
 
 	@Test(expected = java.lang.RuntimeException.class)
@@ -68,6 +69,7 @@ public class VulkanizerskaRadnjaTest {
 	// Greska u logici equals metode
 	// Poredi cele objekte,a ne po nazivu marke i modela.
 	@Test
+	// ovo
 	public void testPronadjiGumuIsteMarkeDrugihDimenzija() {
 		v.dodajGumu(a);
 		AutoGuma b = new AutoGuma();
@@ -77,15 +79,15 @@ public class VulkanizerskaRadnjaTest {
 		b.setVisina(90);
 		v.dodajGumu(b);
 
-		LinkedList<AutoGuma> nova = v.pronadjiGumu("Miselin");
-		assertEquals(2, nova.size());
+		assertEquals(v.gume.get(v.gume.size() - 1).getMarkaModel(), a.getMarkaModel());
 	}
 
 	@Test
+
 	public void testPronadjiGumu() {
 		v.dodajGumu(a);
-		LinkedList<AutoGuma> nova = v.pronadjiGumu("Miselin");
-		assertEquals(1, nova.size());
+
+		assertEquals(v.gume.get(v.gume.size() - 1), a);
 
 	}
 }

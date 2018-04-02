@@ -14,7 +14,7 @@ public class VulkanizerskaRadnja {
 	/**
 	 * Lista AutoGuma pod nazivom gume.
 	 */
-	private LinkedList<AutoGuma> gume = new LinkedList<AutoGuma>();
+	public LinkedList<AutoGuma> gume = new LinkedList<AutoGuma>();
 
 	/**
 	 * Metoda koja dodaje gumu u listu.
